@@ -1,6 +1,7 @@
 package com.mediguide.mediguide_backend.controller;
 
 import com.mediguide.mediguide_backend.dto.AuthResponse;
+import com.mediguide.mediguide_backend.dto.LoginRequest;
 import com.mediguide.mediguide_backend.dto.RegisterRequest;
 import com.mediguide.mediguide_backend.service.UserService;
 import jakarta.validation.Valid;
@@ -21,5 +22,9 @@ public class AuthController {
     public AuthResponse register(@Valid @RequestBody RegisterRequest request) {
         return userService.register(request);
     }
+    @PostMapping("/login")
+public AuthResponse login(@Valid @RequestBody LoginRequest request) {
+    return userService.login(request);
+}
 
 }

@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(135deg,#dbeafe,#ecfeff);
+}
+
+.container{
+
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-card{
+
+    background:white;
+
+    width:400px;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+    text-align:center;
+}
+
+.login-card h1{
+
+    color:#2563eb;
+
+    margin-bottom:10px;
+}
+
+.subtitle{
+
+    color:#555;
+
+    margin-bottom:30px;
+}
+
+input{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-bottom:18px;
+
+    border-radius:10px;
+
+    border:1px solid #d1d5db;
+
+    outline:none;
+
+    font-size:16px;
+}
+
+input:focus{
+
+    border:1px solid #2563eb;
+}
+
+button{
+
+    width:100%;
+
+    padding:14px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    background:#1d4ed8;
+}
+
+.register-text{
+
+    margin-top:20px;
+}
+
+.register-text a{
+
+    color:#2563eb;
+
+    text-decoration:none;
+
+    font-weight:bold;
+}
+
+.register-text a:hover{
+
+    text-decoration:underline;
+}

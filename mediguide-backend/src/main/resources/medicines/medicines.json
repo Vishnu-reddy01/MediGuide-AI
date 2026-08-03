@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Paracetamol",
+    "usedFor": "Fever, Headache, Body Pain",
+    "dosage": "500mg every 6 hours after food",
+    "recommendedFoods": "Banana, Rice, Soup, Coconut Water",
+    "avoidFoods": "Alcohol, Oily Foods",
+    "sideEffects": "Nausea, Skin Rash"
+  },
+  {
+    "name": "Cetirizine",
+    "usedFor": "Allergy",
+    "dosage": "10mg once daily",
+    "recommendedFoods": "Warm Water, Fruits",
+    "avoidFoods": "Alcohol",
+    "sideEffects": "Sleepiness"
+  },
+  {
+    "name": "Amoxicillin",
+    "usedFor": "Bacterial Infection",
+    "dosage": "500mg three times daily",
+    "recommendedFoods": "Curd, Yogurt, Fruits",
+    "avoidFoods": "Alcohol",
+    "sideEffects": "Diarrhea"
+  },
+  {
+    "name": "Ibuprofen",
+    "usedFor": "Pain and Inflammation",
+    "dosage": "400mg after meals",
+    "recommendedFoods": "Milk, Rice",
+    "avoidFoods": "Alcohol, Spicy Food",
+    "sideEffects": "Stomach Pain"
+  },
+  {
+    "name": "Omeprazole",
+    "usedFor": "Acidity",
+    "dosage": "20mg before breakfast",
+    "recommendedFoods": "Oats, Banana",
+    "avoidFoods": "Coffee, Fried Foods",
+    "sideEffects": "Headache"
+  }
+]

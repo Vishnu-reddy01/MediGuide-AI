@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediGuide AI Dashboard</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<div class="logo-title">
+<i class="fa-solid fa-heart-pulse"></i>
+<h1>MediGuide AI</h1>
+</div>
+
+<p>AI Powered Medicine Information Assistant</p>
+
+</div>
+
+<button id="logoutBtn">
+<i class="fa-solid fa-right-from-bracket"></i>
+Logout
+</button>
+
+</header>
+
+<section class="welcome">
+<h2>👋 Welcome, <span id="username">User</span></h2>
+</section>
+
+<section class="quote-card">
+
+<h2>🌿 "Prevention starts with healthy choices"</h2>
+
+<p>
+MediGuide AI encourages a healthier lifestyle by helping you
+understand medicines, choose nutritious foods, and reduce
+unnecessary medicine dependency while minimizing possible side effects.
+</p>
+
+</section>
+
+<section class="scanner-card">
+
+<h2>Upload Medicine Strip</h2>
+
+<div class="upload-area">
+
+<input
+type="file"
+id="medicineImage"
+accept="image/*"
+hidden>
+
+<label for="medicineImage">
+
+<i class="fa-solid fa-cloud-arrow-up"></i>
+
+<p>Click to Upload Image</p>
+
+</label>
+
+<img id="previewImage" hidden>
+
+<video
+    id="cameraPreview"
+    autoplay
+    playsinline
+    hidden>
+</video>
+
+<canvas
+    id="captureCanvas"
+    hidden>
+</canvas>
+
+<p id="scanStatus"></p>
+
+</div>
+
+<div class="scanner-buttons">
+
+<button id="analyzeBtn">
+🔍 Analyze Medicine
+</button>
+
+<button id="cameraBtn">
+📷 Open Camera
+</button>
+<button id="captureBtn">
+
+📸 Capture
+
+</button>
+</div>
+
+</section>
+
+<section class="result-grid">
+
+<div class="info-card">
+<h3>💊 Medicine</h3>
+<p id="medicineName">--</p>
+</div>
+
+<div class="info-card">
+<h3>🩺 Used For</h3>
+<p id="medicineUses">--</p>
+</div>
+
+<div class="info-card">
+<h3>💊 Dosage</h3>
+<p id="medicineDosage">--</p>
+</div>
+
+<div class="info-card">
+<h3>🥗 Recommended Foods</h3>
+<p id="recommendedFoods">--</p>
+</div>
+
+<div class="info-card">
+<h3>🚫 Avoid Foods</h3>
+<p id="avoidFoods">--</p>
+</div>
+
+<div class="info-card">
+<h3>⚠ Side Effects</h3>
+<p id="sideEffects">--</p>
+</div>
+
+</section>
+
+<section class="history">
+
+<h2>📜 Scan History</h2>
+
+<input
+id="historySearch"
+type="text"
+placeholder="🔍 Search Medicine...">
+
+<div id="historyList"></div>
+
+</section>
+
+<!-- ================= CHATBOT BUTTON ================= -->
+
+<div class="chatbot-btn" id="openChat">
+
+    <i class="fa-solid fa-robot"></i>
+
+</div>
+
+<!-- ================= CHATBOT POPUP ================= -->
+
+<div class="chat-popup" id="chatPopup">
+
+    <div class="chat-header">
+
+        <div>
+
+            <h3>🤖 MediGuide AI</h3>
+
+            <small>Medicine & Food Assistant</small>
+
+        </div>
+
+        <button id="closeChat">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+    <div class="chat-body" id="chatBody">
+
+        <div class="bot-message">
+
+            👋 Hello! I'm MediGuide AI
+             Ask me anything related to medicines, food and nutrition.
+
+        </div>
+
+    </div>
+
+    <div class="chat-footer">
+
+        <input
+            type="text"
+            id="chatInput"
+            placeholder="Type your question...">
+
+        <button id="sendMessage">
+
+            <i class="fa-solid fa-paper-plane"></i>
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="https://unpkg.com/tesseract.js@5/dist/tesseract.min.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

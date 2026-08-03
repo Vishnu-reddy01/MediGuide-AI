@@ -1,0 +1,931 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#1f2d6d,#3458c7);
+    color:#fff;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding:18px 55px;
+}
+
+.logo{
+    display:flex;
+    flex-direction:column;
+}
+
+.logo-title{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-title i{
+    font-size:42px;
+    color:#fff;
+}
+
+.logo-title h1{
+    font-size:54px;
+    font-weight:800;
+    color:white;
+}
+
+.logo p{
+    margin-left:55px;
+    margin-top:6px;
+    color:#e8e8e8;
+    font-size:16px;
+}
+
+#logoutBtn{
+    border:none;
+    background:#ff5b5b;
+    color:white;
+    padding:12px 24px;
+    border-radius:12px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#logoutBtn:hover{
+    background:#ff4343;
+}
+
+/* ================= WELCOME ================= */
+
+.welcome{
+    text-align:center;
+    margin-top:10px;
+}
+
+.welcome h2{
+    font-size:36px;
+    font-weight:700;
+}
+
+/* ================= MOTIVATION ================= */
+
+.quote-card{
+
+    width:78%;
+    margin:28px auto;
+    background:white;
+    color:#222;
+    border-radius:25px;
+    padding:28px 35px;
+    text-align:center;
+}
+
+.quote-card h2{
+
+    color:#3563f2;
+    font-size:26px;
+    margin-bottom:15px;
+}
+
+.quote-card p{
+
+    font-size:17px;
+    line-height:1.8;
+}
+
+/* ================= SCANNER ================= */
+
+.scanner-card{
+
+    width:78%;
+    margin:28px auto;
+    background:white;
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+}
+
+.scanner-card h2{
+
+    color:#3563f2;
+    font-size:30px;
+    margin-bottom:25px;
+}
+
+.upload-area{
+
+    border:3px dashed #4b82ff;
+    border-radius:22px;
+    background:#eef4ff;
+    padding:35px;
+    cursor:pointer;
+}
+
+.upload-area i{
+
+    color:#3563f2;
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.upload-area p{
+
+    color:#3563f2;
+    font-size:20px;
+    font-weight:600;
+}
+
+.upload-area img{
+
+    max-width:240px;
+    margin-top:15px;
+    border-radius:15px;
+}
+
+/* ================= BUTTONS ================= */
+
+.scanner-buttons{
+
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    margin-top:22px;
+}
+
+.scanner-buttons button{
+
+    border:none;
+    background:#3563f2;
+    color:white;
+    padding:13px 28px;
+    border-radius:12px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.scanner-buttons button:hover{
+
+    background:#274fd0;
+}
+
+/* ================= RESULT ================= */
+
+.result-grid{
+
+    width:78%;
+    margin:35px auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.info-card{
+
+    background:white;
+    color:#222;
+    border-radius:18px;
+    padding:18px;
+    min-height:135px;
+}
+
+.info-card h3{
+
+    color:#3563f2;
+    font-size:20px;
+    margin-bottom:12px;
+}
+
+.info-card p{
+
+    font-size:15px;
+    line-height:1.6;
+}
+
+/* ================= HISTORY ================= */
+
+.history{
+
+    width:78%;
+    margin:40px auto 70px;
+    text-align:center;
+}
+
+.history h2{
+
+    font-size:34px;
+    margin-bottom:18px;
+}
+
+.history input{
+
+    width:46%;
+    padding:14px 18px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+}
+
+/* ================= CHATBOT ================= */
+
+.chatbot-btn{
+
+    position:fixed;
+    bottom:22px;
+    right:22px;
+
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+    background:#3563f2;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-decoration:none;
+
+    font-size:25px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.35);
+
+    transition:.3s;
+}
+
+.chatbot-btn:hover{
+
+    transform:scale(1.08);
+}
+
+/* ================= TABLET ================= */
+
+@media screen and (max-width:992px){
+
+    header{
+        padding:18px 30px;
+    }
+
+    .logo-title h1{
+        font-size:42px;
+    }
+
+    .logo-title i{
+        font-size:34px;
+    }
+
+    .logo p{
+        margin-left:46px;
+        font-size:15px;
+    }
+
+    .welcome h2{
+        font-size:30px;
+    }
+
+    .quote-card,
+    .scanner-card,
+    .result-grid,
+    .history{
+        width:90%;
+    }
+
+    .result-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .history input{
+        width:75%;
+    }
+
+}
+
+/* ================= MOBILE ================= */
+
+@media screen and (max-width:768px){
+
+    header{
+
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        gap:18px;
+        padding:20px;
+
+    }
+
+    .logo-title{
+
+        justify-content:center;
+
+    }
+
+    .logo-title h1{
+
+        font-size:34px;
+
+    }
+
+    .logo-title i{
+
+        font-size:28px;
+
+    }
+
+    .logo p{
+
+        margin:8px 0 0;
+        font-size:14px;
+
+    }
+
+    #logoutBtn{
+
+        width:180px;
+
+    }
+
+    .welcome{
+
+        margin-top:15px;
+
+    }
+
+    .welcome h2{
+
+        font-size:28px;
+
+    }
+
+    .quote-card{
+
+        width:95%;
+        padding:22px;
+
+    }
+
+    .quote-card h2{
+
+        font-size:22px;
+
+    }
+
+    .quote-card p{
+
+        font-size:15px;
+
+    }
+
+    .scanner-card{
+
+        width:95%;
+        padding:22px;
+
+    }
+
+    .scanner-card h2{
+
+        font-size:24px;
+
+    }
+
+    .upload-area{
+
+        padding:28px 15px;
+
+    }
+
+    .upload-area i{
+
+        font-size:48px;
+
+    }
+
+    .upload-area p{
+
+        font-size:18px;
+
+    }
+
+    .upload-area img{
+
+        max-width:180px;
+
+    }
+
+    .scanner-buttons{
+
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+
+    }
+
+    .scanner-buttons button{
+
+        width:100%;
+        max-width:280px;
+
+    }
+
+    .result-grid{
+
+        width:95%;
+        grid-template-columns:1fr;
+        gap:16px;
+
+    }
+
+    .info-card{
+
+        min-height:auto;
+
+    }
+
+    .history{
+
+        width:95%;
+
+    }
+
+    .history h2{
+
+        font-size:28px;
+
+    }
+
+    .history input{
+
+        width:100%;
+
+    }
+
+    .chatbot-btn{
+
+        width:58px;
+        height:58px;
+        font-size:22px;
+        right:18px;
+        bottom:18px;
+
+    }
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media screen and (max-width:480px){
+
+    .logo-title h1{
+
+        font-size:28px;
+
+    }
+
+    .logo-title i{
+
+        font-size:24px;
+
+    }
+
+    .welcome h2{
+
+        font-size:24px;
+
+    }
+
+    .quote-card h2,
+    .scanner-card h2{
+
+        font-size:20px;
+
+    }
+
+    .quote-card p{
+
+        font-size:14px;
+
+    }
+
+    .info-card h3{
+
+        font-size:18px;
+
+    }
+
+    .info-card p{
+
+        font-size:14px;
+
+    }
+
+    .history h2{
+
+        font-size:24px;
+
+    }
+
+}
+.history-item{
+
+    background:white;
+
+    color:#333;
+
+    padding:15px;
+
+    margin:12px auto;
+
+    width:45%;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+
+}
+#scanStatus{
+
+    margin-top:15px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#2f5bea;
+
+}
+/* ===========================
+   CHATBOT BUTTON
+=========================== */
+
+.chatbot-btn{
+
+    position:fixed;
+
+    bottom:25px;
+
+    right:25px;
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+.chatbot-btn:hover{
+
+    transform:scale(1.08);
+
+    background:#1d4ed8;
+
+}
+
+
+/* ===========================
+   CHAT POPUP
+=========================== */
+
+.chat-popup{
+
+    position:fixed;
+
+    bottom:100px;
+
+    right:25px;
+
+    width:360px;
+
+    height:500px;
+
+    background:white;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+    display:none;
+
+    flex-direction:column;
+
+    overflow:hidden;
+
+    z-index:999;
+
+}
+
+
+/* ===========================
+   HEADER
+=========================== */
+
+.chat-header{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:15px 18px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.chat-header h3{
+
+    font-size:18px;
+
+}
+
+.chat-header small{
+
+    font-size:12px;
+
+}
+
+.chat-header button{
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+}
+
+
+/* ===========================
+   BODY
+=========================== */
+
+.chat-body{
+
+    flex:1;
+
+    padding:15px;
+
+    overflow-y:auto;
+
+    background:#f4f7fb;
+
+}
+
+
+/* Bot Message */
+
+.bot-message{
+
+    background:white;
+
+    color:#222;          /* Add this */
+
+    padding:12px 15px;
+
+    border-radius:15px 15px 15px 0;
+
+    width:fit-content;
+
+    max-width:85%;
+
+    margin-bottom:12px;
+
+    line-height:1.5;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+
+/* User Message */
+
+.user-message{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:12px 15px;
+
+    border-radius:15px 15px 0 15px;
+
+    margin-left:auto;
+
+    width:fit-content;
+
+    max-width:85%;
+
+    margin-bottom:12px;
+
+    line-height:1.5;
+
+}
+
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.chat-footer{
+
+    display:flex;
+
+    gap:10px;
+
+    padding:12px;
+
+    border-top:1px solid #ddd;
+
+    background:white;
+
+}
+
+.chat-footer input{
+
+    flex:1;
+
+    padding:12px 15px;
+
+    border-radius:25px;
+
+    border:1px solid #ccc;
+
+    outline:none;
+
+    font-size:15px;
+
+    color:#000;              
+
+    background:#fff;        
+
+}
+.chat-footer button{
+
+    width:50px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+}
+
+.chat-footer button:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+    .chat-popup{
+
+        width:95%;
+
+        right:2.5%;
+
+        height:70vh;
+
+    }
+
+}
+/* ===========================
+   TYPING ANIMATION
+=========================== */
+
+.typing-message{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:12px;
+
+}
+
+.typing-bubble{
+
+    background:white;
+
+    padding:12px 18px;
+
+    border-radius:15px 15px 15px 0;
+
+    display:flex;
+
+    gap:6px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.typing-bubble span{
+
+    width:8px;
+
+    height:8px;
+
+    background:#2563eb;
+
+    border-radius:50%;
+
+    animation:typing 1.2s infinite;
+
+}
+
+.typing-bubble span:nth-child(2){
+
+    animation-delay:.2s;
+
+}
+
+.typing-bubble span:nth-child(3){
+
+    animation-delay:.4s;
+
+}
+
+@keyframes typing{
+
+    0%{
+
+        opacity:.2;
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        opacity:1;
+
+        transform:translateY(-5px);
+
+    }
+
+    100%{
+
+        opacity:.2;
+
+        transform:translateY(0);
+
+    }
+
+}
